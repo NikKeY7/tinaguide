@@ -15,6 +15,7 @@ nav div#bot-information {
 	font-size: 40px;
 	color: #fff;
 	padding: 30px;
+	display: flex;
 }
 nav div#bot-information ul {
 	display: none;
