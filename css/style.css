@@ -16,16 +16,20 @@ nav div#bot-information {
 nav div#bot-information button {
 	font-size: 40px;
 	color: #fff;
-	padding: 30px;
+	padding: 20px;
 	display: flex;
 }
 nav div#bot-information ul {
 	display: none;
 }
 nav div#bot-information button div#avatar {
-	width: 128px;
-	height: 128px;
+	width: 72px;
+	height: 72px;
 	border-radius: 100%;
 	background: url('https://cdn.discordapp.com/avatars/513342687978586143/2b1f5698adc6dc477477f812981839e6.png?size=256') center center no-repeat;
 	background-size: 100%;
+}
+nav div#bot-information button span {
+	line-height: 72px;
+	letter-spacing: 20px;
 }
