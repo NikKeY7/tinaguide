@@ -1,5 +1,26 @@
 section {
 	width: 100vw;
 	min-height: 500px;
-	background: linear-gradient(to bottom right, #ffe53b, #ff2525)
+	background: linear-gradient(to bottom right, #ffe53b, #ff2525);
+	position: relative;
+}
+nav {
+	position: absolute;
+	top: 48px;
+	left: 48px;
+}
+nav div#bot-information {
+	border-radius: 10px;
+	border: 2px solid #fff;
+	padding: 15px;
+}
+nav div#bot-information ul {
+	display: none;
+}
+nav div#bot-information button div#ava {
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	background: url('https://cdn.discordapp.com/avatars/513342687978586143/2b1f5698adc6dc477477f812981839e6.png?size=256') center center no-repeat;
+	background-size: 100%;
 }
