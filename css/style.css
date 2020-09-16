@@ -12,6 +12,8 @@ nav {
 nav div#bot-information {
 	border-radius: 10px;
 	border: 3px solid #fff;
+}
+nav div#bot-information button {
 	font-size: 40px;
 	color: #fff;
 	padding: 30px;
