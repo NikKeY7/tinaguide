@@ -30,6 +30,8 @@ nav div#bot-information button div#avatar {
 	background-size: 100%;
 }
 nav div#bot-information button span {
+	display: block;
+	padding-left: 30px;
 	line-height: 72px;
 	letter-spacing: 20px;
 }
