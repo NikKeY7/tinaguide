@@ -1,37 +1,114 @@
-section {
+section#content {
 	width: 100vw;
-	min-height: 500px;
+	min-height: 146px;
 	background: linear-gradient(to bottom right, #ffe53b, #ff2525);
 	position: relative;
+	z-index: -999;
 }
-nav {
-	position: absolute;
-	top: 48px;
-	left: 48px;
-}
-nav div#bot-information {
-	border-radius: 10px;
-	border: 3px solid #fff;
-}
-nav div#bot-information button {
-	font-size: 40px;
-	color: #fff;
-	padding: 20px;
+div#top-navigation {
 	display: flex;
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	right: 25px;
+	padding: 15px;
+	border-radius: 15px;
+	background: rgba(1,1,1,0.3);
+	justify-content: center;
 }
-nav div#bot-information ul {
-	display: none;
+div#top-navigation div#bot {
+	display: flex;
+	margin: 0px 15%;
 }
-nav div#bot-information button div#avatar {
-	width: 72px;
-	height: 72px;
+div#top-navigation div#avatar {
+	width: 58px;
+	height: 58px;
 	border-radius: 100%;
+	border: 2px solid #fff;
 	background: url('https://cdn.discordapp.com/avatars/513342687978586143/2b1f5698adc6dc477477f812981839e6.png?size=256') center center no-repeat;
 	background-size: 100%;
 }
-nav div#bot-information button span {
+div#top-navigation div#icon {
+	width: 58px;
+	height: 58px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	position: relative;
+}
+div#top-navigation div#icon i {
 	display: block;
-	padding-left: 30px;
-	line-height: 72px;
-	letter-spacing: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 35px;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+div#top-navigation div#arrow {
+	width: 45px;
+	height: 58px;
+	position: relative;
+}
+div#top-navigation div#arrow div#dawn {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	transform: translate(-50%,-50%) rotate(45deg);
+	top: 50%;
+	left: 50%;
+	border-right: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+section#about {
+	width: 100vw;
+	min-height: 300px;
+	background: #900c3e;
+	box-shadow: 0px 0px 20px 5px rgba(1,1,1,0.3);
+	z-index: 999;
+	position: relative;
+}
+section#about div#content {
+	width: 80%;
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+	display: flex;
+	padding: 30px 0px;
+}
+/*section#about div#content div#icons {max-width: 128px;}*/
+section#about div#content div#icons div#botAvatar {
+	margin: 0 auto;
+	width: 128px;
+	height: 128px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	background: url('https://cdn.discordapp.com/avatars/513342687978586143/2b1f5698adc6dc477477f812981839e6.png?size=256') center center no-repeat;
+	background-size: 100%;
+}
+section#about div#content div#icons div#developers b {text-align:center;display:block;padding-top:20px;padding-bottom: 10px;color: #fff;text-transform: uppercase;}
+section#about div#content div#icons div#developers ul#list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+section#about div#content div#icons div#developers ul#list li {
+	display: flex;
+}
+section#about div#content div#icons div#developers ul#list li div#user {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	background: url('https://cdn.discordapp.com/avatars/352757988567678976/018c0c881dfc2c4bf808a12968785ffe.png?size=256') center center no-repeat;
+	background-size: 100%;
+}
+section#about div#content div#icons div#developers ul#list li span {
+	display: flex;
+	margin-left: 15px;
+	font-size: 20px;
+	color:#fff;
+	line-height: 40px;
+}
+span p {
+	color: #ccc;
 }
