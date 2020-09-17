@@ -1,67 +1,62 @@
 section#content {
+	display: flex;
 	width: 100vw;
-	min-height: 146px;
-	background: linear-gradient(to bottom right, #ffe53b, #ff2525);
+	min-height: 400px;
+	background: linear-gradient(to bottom right, #900c3e, #ff2525);
 	position: relative;
-	z-index: -999;
+	z-index: 990;
 }
-div#top-navigation {
-	display: flex;
-	position: absolute;
-	left: 25px;
-	top: 25px;
-	right: 25px;
-	padding: 15px;
-	border-radius: 15px;
-	background: rgba(1,1,1,0.3);
-	justify-content: center;
-}
-div#top-navigation div#bot {
-	display: flex;
-	margin: 0px 15%;
-}
-div#top-navigation div#avatar {
-	width: 58px;
-	height: 58px;
-	border-radius: 100%;
-	border: 2px solid #fff;
-	background: url('https://cdn.discordapp.com/avatars/513342687978586143/2b1f5698adc6dc477477f812981839e6.png?size=256') center center no-repeat;
-	background-size: 100%;
-}
-div#top-navigation div#icon {
-	width: 58px;
-	height: 58px;
-	border-radius: 100%;
-	border: 2px solid #fff;
-	position: relative;
-}
-div#top-navigation div#icon i {
+section#content nav {
 	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	font-size: 35px;
-	color: #fff;
-	transform: translate(-50%,-50%);
-}
-div#top-navigation div#arrow {
-	width: 45px;
-	height: 58px;
 	position: relative;
+	width: 35%;
+	background: rgba(1,1,1,0.3);
+	box-shadow: inset 0px 0px 20px 5px rgba(1,1,1,0.3);
 }
-div#top-navigation div#arrow div#dawn {
-	width: 15px;
-	height: 15px;
+section#content nav ul#list {
+	/*width: 80%;*/
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+section#content nav ul#list li {
+	padding: 20px 0px;
+	transition: 0.3s;
+}
+section#content nav ul#list li:hover {
+	background: rgba(200,200,200,0.15);
+}
+section#content nav ul#list li div#cont {
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+section#content nav ul#list li div#icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	position: relative;
+	border: 3px solid #ccc;
+}
+section#content nav ul#list li div#icon i.fa {
 	position: absolute;
-	transform: translate(-50%,-50%) rotate(45deg);
+	font-size: 25px;
+	transform: translate(-50%,-50%);
 	top: 50%;
 	left: 50%;
-	border-right: 2px solid #fff;
-	border-bottom: 2px solid #fff;
+	color: #ccc;
+}
+section#content nav ul#list li strong {
+	line-height: 56px;
+	padding-left: 10px;
+	color: #ccc;
+	font-size: 20px;
 }
 section#about {
 	width: 100vw;
-	min-height: 300px;
+	min-height: 150px;
 	background: #900c3e;
 	box-shadow: 0px 0px 20px 5px rgba(1,1,1,0.3);
 	z-index: 999;
@@ -69,7 +64,7 @@ section#about {
 }
 section#about div#content {
 	width: 80%;
-	position: absolute;
+	position: relative;
 	transform: translateX(-50%);
 	left: 50%;
 	display: flex;
@@ -111,4 +106,13 @@ section#about div#content div#icons div#developers ul#list li span {
 }
 span p {
 	color: #ccc;
+}
+section#about div#content div#description {
+	color: #fff;
+	padding-left: 25px;
+}
+section#about div#content div#description span {
+	display: block;
+	padding-top: 20px;
+	font-size: 25px;
 }
